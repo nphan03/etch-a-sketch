@@ -5,3 +5,10 @@ for(let i = 0; i<256; i++){
     div.classList.add('square');
     container.appendChild(div);
 }
+
+const squares = document.querySelectorAll('.square');
+squares.forEach(square=>{
+    square.onmouseover = () =>{
+        square.classList.add("changedColor");
+    }
+})
